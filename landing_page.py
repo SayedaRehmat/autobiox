@@ -16,8 +16,18 @@ to predict **breast cancer subtypes** — helping researchers and doctors make i
 ---
 
 ### 🔗 Try the Tool
-if st.button("🔗 Launch the AutoBio-X Tool"):
-    st.markdown("[Click here to open AutoBio-X](https://autobiox.streamlit.app)", unsafe_allow_html=True)
+  st.markdown(
+    '<a href="https://autobiox-fxte3vxn6kxlvjtk7uwrfg.streamlit.app/" target="_blank">'
+    '<button style="padding:10px 20px;background-color:#4CAF50;color:white;border:none;border-radius:5px;">'
+    '🔗 Launch the AutoBio-X Tool</button></a>',
+    unsafe_allow_html=True
+)
+
+    '<button style="padding:10px 20px;background-color:#4CAF50;color:white;border:none;border-radius:5px;">'
+    '🔗 Launch the AutoBio-X Tool</button></a>',
+    unsafe_allow_html=True
+)
+
 
 ---
 
