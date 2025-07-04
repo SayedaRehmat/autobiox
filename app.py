@@ -4,7 +4,7 @@ import joblib
 from fpdf import FPDF
 
 # Load model
- # Train model directly inside app to avoid pickle issues
+# Train model directly inside app to avoid pickle issues
 from sklearn.ensemble import RandomForestClassifier
 
 train_data = {
