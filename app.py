@@ -4,7 +4,32 @@ import joblib
 from fpdf import FPDF
 
 # Load model
-model = joblib.load("autobiox_model.pkl")
+ # Train model directly inside app to avoid pickle issues
+from sklearn.ensemble import RandomForestClassifier
+
+train_data = {
+    "HER2": [3.2, 3.5, 2.9, 7.1, 6.8, 7.3, 10.9, 11.2, 10.6, 1.9, 2.1, 2.3],
+    "TP53": [3.0, 2.8, 3.2, 3.1, 3.0, 3.3, 2.9, 3.2, 3.0, 10.1, 10.3, 9.8],
+    "BRCA1": [7.2, 6.8, 7.0, 6.0, 6.1, 5.9, 3.2, 3.1, 2.8, 2.9, 3.0, 2.7],
+    "ER": [9.1, 9.0, 8.9, 7.1, 6.9, 7.0, 2.2, 2.0, 1.9, 1.0, 1.2, 0.9],
+    "PR": [9.0, 8.8, 9.2, 7.0, 7.1, 6.9, 2.1, 1.8, 2.0, 1.1, 0.9, 1.0],
+    "EGFR": [3.2, 3.0, 2.9, 4.2, 3.8, 4.0, 5.1, 5.0, 5.3, 8.2, 8.1, 8.0],
+    "Subtype": [
+        "Luminal A", "Luminal A", "Luminal A",
+        "Luminal B", "Luminal B", "Luminal B",
+        "HER2+", "HER2+", "HER2+",
+        "Triple-Negative", "Triple-Negative", "Triple-Negative"
+    ]
+}
+
+import pandas as pd
+df = pd.DataFrame(train_data)
+X = df.drop("Subtype", axis=1)
+y = df["Subtype"]
+
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X, y)
+
 
 # Sidebar Language Toggle
 language = st.sidebar.selectbox("🌐 Language", ["English", "Urdu"])
