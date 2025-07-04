@@ -18,7 +18,7 @@ to predict **breast cancer subtypes** — helping researchers and doctors make i
 ### 🔗 Try the Tool
 st.markdown(
     """
-    <a href=" https://autobiox-fxte3vxn6kxlvjtk7uwrfg.streamlit.app/" target="_blank">
+    <a href="https://autobiox.streamlit.app" target="_blank">
         <button style='background-color:#4CAF50;
                        color:white;
                        padding:10px 20px;
