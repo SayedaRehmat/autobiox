@@ -7,6 +7,13 @@ from datetime import datetime
 # ---- App Config ----
 st.set_page_config(page_title="AutoBio-X", layout="centered")
 st.title("🧬 AutoBio-X: Breast Cancer AI Subtype & Mutation Drug Matcher")
+st.markdown("""
+    <div style='text-align: center; margin-top: -30px;'>
+        <img src="https://i.imgur.com/T9QZBJv.png" width="100">
+        <h2 style='color:#d16ba5;'>AutoBio-X</h2>
+        <p style='color:#f5f5f5;'>An AI Platform by BioZero</p>
+    </div>
+""", unsafe_allow_html=True)
 
 # ---- Train Model Inline ----
 train_data = {
