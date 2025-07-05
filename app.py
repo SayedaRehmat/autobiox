@@ -5,13 +5,13 @@ from fpdf import FPDF
 from datetime import datetime
 
 # ---- App Config ----
-st.set_page_config(page_title="AutoBio-X", layout="centered")
 st.markdown("""
-    <div style='text-align: center; margin-top: -30px; margin-bottom: 20px;'>
-        <img src="https://raw.githubusercontent.com/SayedaRehmat/autobiox/main/autobiox_logo.png" width="120" style="border-radius: 12px;">
+    <div style='text-align: center; margin-top: -20px; margin-bottom: 20px;'>
+        <img src="https://raw.githubusercontent.com/SayedaRehmat/autobiox/main/autobiox_logo.png" width="160">
         <p style='color:#f5f5f5; margin-top: 5px;'>An AI Platform by <span style='color:#d16ba5;'>BioZero</span></p>
     </div>
 """, unsafe_allow_html=True)
+
 
 
 st.title("🧬 AutoBio-X: Breast Cancer AI Subtype & Mutation Drug Matcher")
