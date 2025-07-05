@@ -49,8 +49,7 @@ drug_map = {
 # ---- Sidebar ----
 st.sidebar.title("🌍 Language / زبان منتخب کریں")
 language = st.sidebar.radio("Choose:", ["English", "Urdu"])
-st.sidebar.markdown("---")
-st.sidebar.markdown("👩‍⚕️ Created by **Syeda Rehmat**, Founder of BioZero")
+ 
 
 # ---- Input ----
 st.header("📊 Gene Expression Input")
