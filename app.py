@@ -5,10 +5,14 @@ from fpdf import FPDF
 from datetime import datetime
 
 # ---- App Config ----
+# 📍 Place this just after st.set_page_config(...) — very top of app.py
+
 st.markdown("""
-    <div style='text-align: center; margin-top: -20px; margin-bottom: 20px;'>
-        <img src="https://raw.githubusercontent.com/SayedaRehmat/autobiox/main/autobiox_logo.png" width="160">
-        <p style='color:#f5f5f5; margin-top: 5px;'>An AI Platform by <span style='color:#d16ba5;'>BioZero</span></p>
+    <div style='text-align: center; padding-top: 10px; padding-bottom: 20px;'>
+        <img src="https://raw.githubusercontent.com/SayedaRehmat/autobiox/main/autobiox_logo.png" width="160" style="margin-bottom: 10px;">
+        <div style='font-size: 18px; color: #f5f5f5;'>
+            <span style='color:#d16ba5;'>AutoBio-X</span> — An AI Platform by BioZero
+        </div>
     </div>
 """, unsafe_allow_html=True)
 
