@@ -1,49 +1,43 @@
 import streamlit as st
 
-st.set_page_config(page_title="AutoBio-X | AI Breast Cancer Platform", layout="centered")
+# ---- Page Config ----
+st.set_page_config(
+    page_title="Welcome | AutoBio-X",
+    layout="centered",
+    initial_sidebar_state="collapsed"
+)
 
+# ---- Main Logo Section ----
 st.markdown("""
-# 🧬 AutoBio-X  
-### AI-Powered Breast Cancer Subtype Predictor  
----
-AutoBio-X is a clinical AI platform that analyzes **gene expression** and **mutations**  
-to predict **breast cancer subtypes**, assess **risk**, and suggest possible **drug matches**.
-
-💡 Created by **Syeda Rehmat — Founder, BioZero**  
-🌍 Bilingual interface: Urdu + English  
-🚀 Built with Streamlit, AI models, and bioinformatics tools
-
+    <div style='text-align: center; padding-top: 30px;'>
+        <img src="https://raw.githubusercontent.com/SayedaRehmat/autobiox/main/autobiox_logo.png" width="170" style="border-radius: 10px; margin-bottom: 20px;">
+        <h1 style='color:#d16ba5; font-size: 40px; margin-bottom: 0;'>AutoBio-X</h1>
+        <p style='color:#f5f5f5; font-size: 20px; margin-top: 5px;'>Let Your Genes Speak — Powered by AI & Bioinformatics</p>
+    </div>
 """, unsafe_allow_html=True)
 
-# Launch button
+# ---- Description ----
 st.markdown("""
-<a href=" https://autobiox-fxte3vxn6kxlvjtk7uwrfg.streamlit.app/" target="_blank">
-    <button style='background-color:#4CAF50;
-                   color:white;
-                   padding:10px 20px;
-                   border:none;
-                   border-radius:8px;
-                   font-size:16px;
-                   margin-top:10px;
-                   cursor:pointer'>
-        🔗 Launch AutoBio-X Tool
-    </button>
-</a>
+<div style='text-align: center; margin-top: 40px; color:#dddddd; font-size: 18px; line-height: 1.6;'>
+AutoBio-X is a next-generation platform designed to explore gene expression<br>
+and mutation data in breast cancer using AI. Built for researchers, clinicians,<br>
+and dreamers — by <b>Syeda Rehmat</b>, founder of <i>BioZero</i>.
+</div>
 """, unsafe_allow_html=True)
 
+# ---- Launch Button ----
 st.markdown("""
----
+<div style='text-align: center; margin-top: 50px;'>
+    <a href='https://autobiox.streamlit.app/app' target='_blank'>
+        <button style='padding: 14px 32px; font-size: 18px; background-color: #d16ba5; color: white; border: none; border-radius: 6px; cursor: pointer;'>🚀 Launch AutoBio-X Tool</button>
+    </a>
+</div>
+""", unsafe_allow_html=True)
 
-## 🧕 About the Founder
-
-I'm **Syeda Rehmat**, a passionate bioinformatics student on a mission to make  
-genomic tools accessible to all — through science, AI, and care.
-
-### 📫 Contact Me
-- 🔗 GitHub: [github.com/SayedaRehmat](https://github.com/SayedaRehmat)
-- 📧 Email: sayedarehmat@gmail.com *(or update to your real one)*
-
----
-
-<sub>© 2025 BioZero — Empowering Genes. Empowering Women.</sub>
+# ---- Footer ----
+st.markdown("""
+<hr style='margin-top: 60px; border-color: #333;'/>
+<div style='text-align: center; color:#888888; font-size: 14px;'>
+    © 2025 Syeda Rehmat — Founder of BioZero
+</div>
 """, unsafe_allow_html=True)
