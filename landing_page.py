@@ -7,20 +7,26 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom background
+# 🌌 Custom Background
 st.markdown("""
     <style>
     body {
         background-color: #1b1f2a;
     }
     .css-1aumxhk { padding-top: 1rem; }
+    button {
+        transition: 0.3s ease;
+    }
+    button:hover {
+        background-color: #b24b8d !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
-# Begin 2-column layout
+# 💻 Layout: 2 columns (Logo | Text + Button)
 col1, col2 = st.columns([1, 2])
 
-# 🔬 Left: Logo Side Panel
+# 🔬 Left Column: Logo
 with col1:
     st.markdown("""
         <div style="padding-top: 80px; text-align: center;">
@@ -28,16 +34,20 @@ with col1:
         </div>
     """, unsafe_allow_html=True)
 
-# 📊 Right: Text + CTA
+# ✨ Right Column: Project Info + Button
 with col2:
     st.markdown("""
         <div style="padding-top: 60px;">
             <h1 style="color:#d16ba5; font-size: 42px; margin-bottom: 5px;">AutoBio-X</h1>
             <p style="color:#eeeeee; font-size: 20px; margin-top: 0;">From code to cure — Let Your Genes Speak</p>
 
-            <div style="margin-top: 40px; color: #cccccc; font-size: 17px; line-height: 1.7;">
-                AutoBio-X is an AI-powered platform built to explore gene expression and mutation patterns in breast cancer.<br><br>
-                Designed by <b>Syeda Rehmat</b> — blending bioinformatics and artificial intelligence for real clinical impact.
+            <div style="margin-top: 40px; color: #cccccc; font-size: 17px; line-height: 1.8;">
+                <p>
+                    <b>AutoBio-X</b> is an AI-powered platform designed to analyze gene expression and mutation patterns in breast cancer — empowering early diagnosis, subtype classification, and potential therapy guidance.
+                </p>
+                <p>
+                    Created by <b>Syeda Rehmat</b>, founder of <i>BioZero</i>, this tool combines bioinformatics and artificial intelligence with a human purpose: to let your genes speak — and to let them be heard.
+                </p>
             </div>
 
             <div style="margin-top: 40px;">
@@ -48,11 +58,11 @@ with col2:
         </div>
     """, unsafe_allow_html=True)
 
-# Footer
+# 🖋️ Footer
 st.markdown("""
 <hr style='margin-top: 60px; border-color: #333;'/>
 <div style='text-align: center; color:#777777; font-size: 14px; padding-bottom: 20px;'>
     © 2025 <b>Syeda Rehmat</b> — Founder of <i>BioZero</i><br>
-    Built with passion, purpose, and code 💫
+    Powered by curiosity, courage, and code 💫
 </div>
 """, unsafe_allow_html=True)
