@@ -47,7 +47,7 @@ with col2:
     # ✅ Final working launch "button"
     st.markdown("""
         <div style="margin-top: 40px;">
-            <a href="https://autobiox.streamlit.app/app" target="_blank" style="
+            <a href="https://autobiox-fxte3vxn6kxlvjtk7uwrfg.streamlit.app/" target="_blank" style="
                 display: inline-block;
                 padding: 14px 32px;
                 font-size: 18px;
