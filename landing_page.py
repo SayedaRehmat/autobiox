@@ -49,7 +49,7 @@ with col2:
     """, unsafe_allow_html=True)
 
      # 🚀 Streamlit-safe Button Redirect
-     st.markdown("###")  # spacing
+    st.markdown("###")  # spacing
 
      if st.button("🚀 Launch the AutoBio-X Tool"):
     st.markdown("""
