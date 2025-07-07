@@ -50,10 +50,16 @@ with col2:
     st.markdown("###")  # spacing
 
     # 🚀 WORKING STREAMLIT BUTTON
-    if st.button("🚀 Launch the AutoBio-X Tool"):
-        st.markdown("""
-            <meta http-equiv="refresh" content="0;url=https://autobiox.streamlit.app/app">
-        """, unsafe_allow_html=True)
+     st.markdown("""
+    <div style="margin-top: 30px;">
+        <a href="https://autobiox.streamlit.app/app" target="_blank">
+            <button style="padding: 14px 32px; font-size: 18px; background-color: #d16ba5;
+            color: white; border: none; border-radius: 6px; cursor: pointer;">
+                🚀 Launch the AutoBio-X Tool
+            </button>
+        </a>
+    </div>
+""", unsafe_allow_html=True)
 
 # ----- FOOTER -----
 st.markdown("""
