@@ -52,7 +52,7 @@ with col2:
     st.markdown("###")  # spacing
 
     if st.button("🚀 Launch the AutoBio-X Tool"):
-    st.markdown("""
+     st.markdown("""
         <meta http-equiv="refresh" content="0;url=https://autobiox.streamlit.app/app">
     """, unsafe_allow_html=True)
 
