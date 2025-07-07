@@ -48,13 +48,14 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
+     # 🚀 Streamlit-safe Button Redirect
+st.markdown("###")  # spacing
+
+if st.button("🚀 Launch the AutoBio-X Tool"):
     st.markdown("""
-    <div style="margin-top: 30px;">
-        <a href='https://autobiox.streamlit.app/app' target='_blank'>
-            <button style='padding: 14px 32px; font-size: 18px; background-color: #d16ba5; color: white; border: none; border-radius: 6px; cursor: pointer;'>🚀 Launch the AutoBio-X Tool</button>
-        </a>
-    </div>
+        <meta http-equiv="refresh" content="0;url=https://autobiox.streamlit.app/app">
     """, unsafe_allow_html=True)
+
 
 # 🖋️ Footer
 st.markdown("""
