@@ -51,7 +51,7 @@ with col2:
      # 🚀 Streamlit-safe Button Redirect
     st.markdown("###")  # spacing
 
-     if st.button("🚀 Launch the AutoBio-X Tool"):
+    if st.button("🚀 Launch the AutoBio-X Tool"):
     st.markdown("""
         <meta http-equiv="refresh" content="0;url=https://autobiox.streamlit.app/app">
     """, unsafe_allow_html=True)
