@@ -36,30 +36,33 @@ with col1:
 # ----- RIGHT COLUMN: TITLE + TEXT + BUTTON -----
 with col2:
     st.markdown("""
-    <h1 style="color:#d16ba5; font-size: 42px; margin-bottom: 5px;">AutoBio-X</h1>
-    <p style="color:#eeeeee; font-size: 20px; margin-top: 0;">From code to cure — Let Your Genes Speak</p>
+        <h1 style="color:#d16ba5;">AutoBio-X</h1>
+        <p style="color:#eeeeee;">Let Your Genes Speak — Powered by AI</p>
+        <div style="margin-top: 30px; color: #cccccc; font-size: 17px; line-height: 1.8;">
+            <p><b>AutoBio-X</b> is an AI-powered platform for gene expression and mutation analysis in breast cancer.</p>
+            <p>Built by <b>Syeda Rehmat</b>, Founder of <i>BioZero</i>.</p>
+        </div>
     """, unsafe_allow_html=True)
 
+    # ✅ Final working launch "button"
     st.markdown("""
-    <div style="margin-top: 30px; color: #cccccc; font-size: 17px; line-height: 1.8;">
-        <p><b>AutoBio-X</b> is an AI-powered platform designed to analyze gene expression and mutation patterns in breast cancer — empowering early diagnosis, subtype classification, and potential therapy guidance.</p>
-        <p>Created by <b>Syeda Rehmat</b>, founder of <i>BioZero</i>, this tool combines bioinformatics and artificial intelligence with a human purpose: to let your genes speak — and to let them be heard.</p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("###")  # spacing
-
-    # 🚀 WORKING STREAMLIT BUTTON
-     st.markdown("""
-    <div style="margin-top: 30px;">
-        <a href="https://autobiox-fxte3vxn6kxlvjtk7uwrfg.streamlit.app/" target="_blank">
-            <button style="padding: 14px 32px; font-size: 18px; background-color: #d16ba5;
-            color: white; border: none; border-radius: 6px; cursor: pointer;">
+        <div style="margin-top: 40px;">
+            <a href="https://autobiox.streamlit.app/app" target="_blank" style="
+                display: inline-block;
+                padding: 14px 32px;
+                font-size: 18px;
+                background-color: #d16ba5;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: background 0.3s ease;
+            ">
                 🚀 Launch the AutoBio-X Tool
-            </button>
-        </a>
-    </div>
-""", unsafe_allow_html=True)
+            </a>
+        </div>
+    """, unsafe_allow_html=True)
 
 # ----- FOOTER -----
 st.markdown("""
