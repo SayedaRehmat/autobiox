@@ -1,19 +1,18 @@
 import streamlit as st
 
-# Page Config
+# ----- Page Configuration -----
 st.set_page_config(
     page_title="AutoBio-X | Let Your Genes Speak",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-# 🌌 Custom Background
+# ----- Custom CSS Styling -----
 st.markdown("""
     <style>
     body {
         background-color: #1b1f2a;
     }
-    .css-1aumxhk { padding-top: 1rem; }
     button {
         transition: 0.3s ease;
     }
@@ -23,18 +22,18 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# 💻 Layout: 2 columns (Logo | Text + Button)
+# ----- Layout: Two Columns -----
 col1, col2 = st.columns([1, 2])
 
-# 🔬 Left Column: Logo
+# ----- LEFT COLUMN: LOGO -----
 with col1:
     st.markdown("""
         <div style="padding-top: 80px; text-align: center;">
-            <img src="https://raw.githubusercontent.com/SayedaRehmat/autobiox/main/autobiox_logo.png" width="160" style="border-radius: 12px;"/>
+            <img src="https://raw.githubusercontent.com/SayedaRehmat/autobiox/main/autobiox_logo.png" width="170" style="border-radius: 12px;" />
         </div>
     """, unsafe_allow_html=True)
 
-# ✨ Right Column: Project Info + Button
+# ----- RIGHT COLUMN: TITLE + TEXT + BUTTON -----
 with col2:
     st.markdown("""
     <h1 style="color:#d16ba5; font-size: 42px; margin-bottom: 5px;">AutoBio-X</h1>
@@ -48,16 +47,15 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
 
-     # 🚀 Streamlit-safe Button Redirect
     st.markdown("###")  # spacing
 
+    # 🚀 WORKING STREAMLIT BUTTON
     if st.button("🚀 Launch the AutoBio-X Tool"):
-     st.markdown("""
-        <meta http-equiv="refresh" content="0;url=https://autobiox.streamlit.app/app">
-    """, unsafe_allow_html=True)
+        st.markdown("""
+            <meta http-equiv="refresh" content="0;url=https://autobiox.streamlit.app/app">
+        """, unsafe_allow_html=True)
 
-
-# 🖋️ Footer
+# ----- FOOTER -----
 st.markdown("""
 <hr style='margin-top: 60px; border-color: #333;'/>
 <div style='text-align: center; color:#777777; font-size: 14px; padding-bottom: 20px;'>
