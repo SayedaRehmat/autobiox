@@ -35,7 +35,7 @@ with col1:
     """, unsafe_allow_html=True)
 
 # ✨ Right Column: Project Info + Button
- with col2:
+with col2:
     st.markdown("""
     <h1 style="color:#d16ba5; font-size: 42px; margin-bottom: 5px;">AutoBio-X</h1>
     <p style="color:#eeeeee; font-size: 20px; margin-top: 0;">From code to cure — Let Your Genes Speak</p>
