@@ -52,7 +52,7 @@ with col2:
     # 🚀 WORKING STREAMLIT BUTTON
      st.markdown("""
     <div style="margin-top: 30px;">
-        <a href="https://autobiox.streamlit.app/app" target="_blank">
+        <a href="https://autobiox-fxte3vxn6kxlvjtk7uwrfg.streamlit.app/" target="_blank">
             <button style="padding: 14px 32px; font-size: 18px; background-color: #d16ba5;
             color: white; border: none; border-radius: 6px; cursor: pointer;">
                 🚀 Launch the AutoBio-X Tool
